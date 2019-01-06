@@ -1,0 +1,6 @@
+
+<a *ngFor="let gif of giphysList" href="{{gif.url}}">
+  <img [src]="gif?.images?.fixed_height?.url" title="image {{gif.id}}">
+</a>
+
+

@@ -1,0 +1,11 @@
+
+
+limit: <input type="number" [(ngModel)]="limit">
+term: <input type="text" [(ngModel)]="term">
+<input type="button" value="pesquisa" (click)="pesquisarGiphy()">
+<br/>
+
+
+<!--{{gifs | json}}-->
+
+<app-giphy-search-list [giphysList]="gifs"></app-giphy-search-list>
